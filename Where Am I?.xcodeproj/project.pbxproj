@@ -14,6 +14,7 @@
 		DAA771961AECBA3800BE4C95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA771941AECBA3800BE4C95 /* LaunchScreen.xib */; };
 		DAA771A21AECBA3800BE4C95 /* Where_Am_I_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA771A11AECBA3800BE4C95 /* Where_Am_I_Tests.swift */; };
 		DAA771AC1AECBA4300BE4C95 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */; };
+		DAA771AE1AECC36E00BE4C95 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA771AD1AECC36E00BE4C95 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DAA771A01AECBA3800BE4C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA771A11AECBA3800BE4C95 /* Where_Am_I_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_Am_I_Tests.swift; sourceTree = "<group>"; };
 		DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DAA771AD1AECC36E00BE4C95 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA771AE1AECC36E00BE4C95 /* AddressBookUI.framework in Frameworks */,
 				DAA771AC1AECBA4300BE4C95 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		DAA7717D1AECBA3800BE4C95 = {
 			isa = PBXGroup;
 			children = (
+				DAA771AD1AECC36E00BE4C95 /* AddressBookUI.framework */,
 				DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */,
 				DAA771881AECBA3800BE4C95 /* Where Am I? */,
 				DAA7719E1AECBA3800BE4C95 /* Where Am I?Tests */,
@@ -413,6 +417,7 @@
 				DAA771A71AECBA3800BE4C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA771A81AECBA3800BE4C95 /* Build configuration list for PBXNativeTarget "Where Am I?Tests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				DAA771AA1AECBA3800BE4C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 import UIKit;
 import CoreLocation;
+import AddressBookUI;
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -41,11 +42,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var location = manager.location;
         
-        latValue.text = "\(location.coordinate.latitude)";
-        longValue.text = "\(location.coordinate.longitude)";
+        latValue.text    = "\(location.coordinate.latitude)";
+        longValue.text   = "\(location.coordinate.longitude)";
         courseValue.text = "\(location.course)";
-        speedValue.text = "\(location.speed)";
-        altValue.text = "\(location.altitude)";
+        speedValue.text  = "\(location.speed)";
+        altValue.text    = "\(location.altitude)";
 
         CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placeMarks, error) -> Void in
             if (error != nil) {
@@ -64,7 +65,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func displaceLocationInfo(placeMark: CLPlacemark) {
-        nearestAddress.text = "\(placeMark.locality)\n\(placeMark.postalCode)\n\(placeMark.administrativeArea)\n\(placeMark.country)";
+        var address = ABCreateStringWithAddressDictionary(placeMark.addressDictionary, true);
+        nearestAddress.text = address;
+        // nearestAddress.text = "\(placeMark.locality)\n\(placeMark.postalCode)\n\(placeMark.administrativeArea)\n\(placeMark.country)";
     }
     
 }
