@@ -13,6 +13,7 @@
 		DAA771931AECBA3800BE4C95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA771921AECBA3800BE4C95 /* Images.xcassets */; };
 		DAA771961AECBA3800BE4C95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA771941AECBA3800BE4C95 /* LaunchScreen.xib */; };
 		DAA771A21AECBA3800BE4C95 /* Where_Am_I_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA771A11AECBA3800BE4C95 /* Where_Am_I_Tests.swift */; };
+		DAA771AC1AECBA4300BE4C95 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DAA7719B1AECBA3800BE4C95 /* Where Am I?Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where Am I?Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA771A01AECBA3800BE4C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA771A11AECBA3800BE4C95 /* Where_Am_I_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_Am_I_Tests.swift; sourceTree = "<group>"; };
+		DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA771AC1AECBA4300BE4C95 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		DAA7717D1AECBA3800BE4C95 = {
 			isa = PBXGroup;
 			children = (
+				DAA771AB1AECBA4300BE4C95 /* CoreLocation.framework */,
 				DAA771881AECBA3800BE4C95 /* Where Am I? */,
 				DAA7719E1AECBA3800BE4C95 /* Where Am I?Tests */,
 				DAA771871AECBA3800BE4C95 /* Products */,
